@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/todoListFragment"
+        android:icon="@drawable/ic_todolist"
+        android:title="@string/todo_list" />
+
+    <item
+        android:id="@+id/userProfileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+</menu>

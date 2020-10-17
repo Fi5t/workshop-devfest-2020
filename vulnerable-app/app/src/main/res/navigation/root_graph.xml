@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/todoListFragment">
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.redmadrobot.vulnerableapp.ui.profile.UserProfileFragment"
+        android:label="UserProfileFragment" />
+    <fragment
+        android:id="@+id/todoListFragment"
+        android:name="com.redmadrobot.vulnerableapp.ui.todolist.TodoListFragment"
+        android:label="TodoListFragment" />
+</navigation>

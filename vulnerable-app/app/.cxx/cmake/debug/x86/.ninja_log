@@ -1,0 +1,15 @@
+# ninja log v5
+0	7	0	clean	3c4acf0c7b63f991
+0	450	1601817002	CMakeFiles/network.dir/network.cpp.o	4c3dfa124cb420b5
+451	556	1601817002	/Users/ak/Sources/VulnerableApplication/app/build/intermediates/cmake/debug/obj/x86/libnetwork.so	af2a57ed8ae3b42d
+0	15	0	clean	3c4acf0c7b63f991
+0	6	0	clean	3c4acf0c7b63f991
+2	411	1601830333	CMakeFiles/network.dir/network.cpp.o	4c3dfa124cb420b5
+412	500	1601830333	/Users/ak/Sources/VulnerableApplication/app/build/intermediates/cmake/debug/obj/x86/libnetwork.so	af2a57ed8ae3b42d
+0	21	0	clean	3c4acf0c7b63f991
+0	13	0	clean	3c4acf0c7b63f991
+0	8	0	clean	3c4acf0c7b63f991
+0	6	0	clean	3c4acf0c7b63f991
+7	1393	1602868491	CMakeFiles/network.dir/network.cpp.o	4c3dfa124cb420b5
+1393	1513	1602868491	/Users/ak/Sources/VulnerableApplication/app/build/intermediates/cmake/debug/obj/x86/libnetwork.so	af2a57ed8ae3b42d
+1	15	0	clean	3c4acf0c7b63f991

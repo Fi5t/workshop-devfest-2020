@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_graph"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.redmadrobot.vulnerableapp.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_fragment_to_create_ping_fragment"
+            app:destination="@id/create_pin_fragment" />
+        <action
+            android:id="@+id/action_login_fragment_to_input_pin_fragment"
+            app:destination="@id/input_pin_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/create_pin_fragment"
+        android:name="com.redmadrobot.vulnerableapp.ui.create_pin.CreatePinFragment"
+        android:label="CreatePinFragment"
+        tools:layout="@layout/fragment_create_pin" >
+        <action
+            android:id="@+id/action_create_ping_fragment_to_main_activity"
+            app:destination="@id/main_activity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/input_pin_fragment"
+        android:name="com.redmadrobot.vulnerableapp.ui.input_pin.InputPinFragment"
+        android:label="InputPinFragment"
+        tools:layout="@layout/fragment_input_pin">
+        <action
+            android:id="@+id/action_input_pin_fragment_to_main_activity"
+            app:destination="@id/main_activity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/main_activity"
+        android:name="com.redmadrobot.vulnerableapp.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/main_activity"/>
+</navigation>

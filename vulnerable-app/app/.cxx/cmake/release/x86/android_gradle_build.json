@@ -1,0 +1,43 @@
+{
+  "stringTable": {
+    "0": "/Users/ak/Sources/VulnerableApplication/app/.cxx/cmake/release/x86",
+    "1": "--target=i686-none-linux-android23 --gcc-toolchain=/Users/ak/Library/Android/sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ak/Library/Android/sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dnetwork_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "/Users/ak/Library/Android/sdk/ndk/21.3.6528147/build/cmake/platforms.cmake",
+    "/Users/ak/Library/Android/sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/Users/ak/Sources/VulnerableApplication/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/ak/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/ak/Sources/VulnerableApplication/app/.cxx/cmake/release/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/ak/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/ak/Sources/VulnerableApplication/app/.cxx/cmake/release/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "network-Release-x86": {
+      "buildCommand": "/Users/ak/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/ak/Sources/VulnerableApplication/app/.cxx/cmake/release/x86\" network",
+      "buildType": "release",
+      "toolchain": "1954985474",
+      "abi": "x86",
+      "artifactName": "network",
+      "files": [
+        {
+          "src": "/Users/ak/Sources/VulnerableApplication/app/src/main/cpp/network.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/ak/Sources/VulnerableApplication/app/build/intermediates/cmake/release/obj/x86/libnetwork.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "1954985474": {
+      "cppCompilerExecutable": "/Users/ak/Library/Android/sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

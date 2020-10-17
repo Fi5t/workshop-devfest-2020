@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/ak/Library/Android/sdk/ndk/21.3.6528147/build/cmake/platforms.cmake",
+    "/Users/ak/Library/Android/sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/Users/ak/Sources/VulnerableApplication/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/ak/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/ak/Sources/VulnerableApplication/app/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/ak/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/ak/Sources/VulnerableApplication/app/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "network-Debug-x86": {
+      "artifactName": "network",
+      "buildCommand": "/Users/ak/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/ak/Sources/VulnerableApplication/app/.cxx/cmake/debug/x86\" network",
+      "abi": "x86",
+      "output": "/Users/ak/Sources/VulnerableApplication/app/build/intermediates/cmake/debug/obj/x86/libnetwork.so",
+      "runtimeFiles": []
+    }
+  }
+}
