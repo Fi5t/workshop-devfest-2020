@@ -1,5 +1,7 @@
 # Workshop: Как взламывают android-приложения и что после этого бывает.
 
+[Видеозапись](https://www.youtube.com/watch?v=x1d1ZnxHUms)
+
 ## Структура репозитория
 
 * `frida-tools` - набор скриптов для Frida применяемых в workshop-е
