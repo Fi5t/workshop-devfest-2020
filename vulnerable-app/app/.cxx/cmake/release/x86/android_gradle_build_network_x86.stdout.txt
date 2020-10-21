@@ -1,3 +1,0 @@
-ninja: Entering directory `/Users/ak/Sources/VulnerableApplication/app/.cxx/cmake/release/x86'
-[1/2] Building CXX object CMakeFiles/network.dir/network.cpp.o
-[2/2] Linking CXX shared library /Users/ak/Sources/VulnerableApplication/app/build/intermediates/cmake/release/obj/x86/libnetwork.so
