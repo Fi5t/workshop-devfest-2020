@@ -23,7 +23,7 @@
 
 ## Инструменты и уязвимости приложения
 
-### MobSF (на домашнее изучение)
+### [MobSF (на домашнее изучение)](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 
 Установка
 ```shell
@@ -31,7 +31,7 @@ $ docker pull opensecurity/mobile-security-framework-mobsf
 $ docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
 ```
 
-### Drozer
+### [Drozer](https://github.com/FSecureLABS/drozer)
 
 Скачать и установить drozer-agent.apk на устройство
 
@@ -82,7 +82,7 @@ $ tar xzvf bakup.tar
 dz> run app.activity.start --component com.redmadrobot.vulnerableapp com.redmadrobot.vulnerableapp.MainActivit
 ```
 
-### jadx-gui
+### [jadx-gui](https://github.com/skylot/jadx)
 Устанавливаем jadx. Версия из Homebrew иногда падает при перетаскивании окна по разным мониторам. С версией из исходников такой проблемы нет.
 ```shell
 $ brew install jadx # macOS
@@ -110,7 +110,7 @@ public final class LoginFragment extends Hilt_LoginFragment {
 ```
 Исследуем экран авторизации. Видим, что есть кнопка, которая явно скрывается перед установкой обработчика нажатия.
 
-### apktool
+### [apktool](https://github.com/iBotPeaches/Apktool)
 Если вы на маке, то установить можно через Homebrew
 ```shell
 $ brew install apktool
@@ -147,13 +147,13 @@ adb logcat -s "USERS"
 В соответствии с OWASP это **M4: Insecure Authentication** и **M10: Extraneous Functionality**
 В ходе анализа выяснили, что запрос списка пользователей выполняется без какой либо авторизации, но в него передается ключ API. Ключ, в свою очередь загружается из нативной библиотеки `libnetwork.so`. Ей и займемся на следующем этапе.
 
-### Ghidra
+### [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
 
 Если доверяете NSA, то можно скачать и запустить уже собранный билд, но лучше [собирать](https://github.com/NationalSecurityAgency/ghidra/blob/master/DevGuide.md) самостоятельно из исходников. Американцы дают качать бинарники только с американских ip-шников, поэтому нужен VPN. Если он есть, то скачать можно [здесь](https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip). Если нет, то я [скачал](https://yadi.sk/d/PiVO_0ivMDmTHg) его за вас.
 
 В Ghidra нужно открыть файл `libnetwork.so`, найти там функцию `Java_com_redmadrobot_vulnerableapp_ui_login_LoginViewModel_getApiKey` и извлечь из нее ключ API.
 
-### Objection
+### [Objection](https://github.com/sensepost/objection)
 
 Еще хочу показать альтернативу большим и сложным инструментам типа Ghidra. Поскольку ключ API все равно появляется в JVM коде его можно перехватить во время выполнения. Проще всего это сделать с помощью **Objection**
 
@@ -185,7 +185,7 @@ public final native java.lang.String com.redmadrobot.vulnerableapp.ui.login.Logi
 ```
 Теперь нужно нажать на кнопку еще раз и увидеть ключ API. Его нужно сохранить, он нам пригодится позже.
 
-### Frida
+### [Frida](https://github.com/frida/frida)
 
 Установка
 ```shell
@@ -344,7 +344,7 @@ Java.perform(function () {
 });
 ```
 
-### mitmproxy
+### [mitmproxy](https://github.com/mitmproxy/mitmproxy)
 
 Установка
 ```bash
@@ -369,7 +369,7 @@ inet 192.168.1.42 netmask 0xffffff00 broadcast 192.168.1.255
 - Походить по методам, которые наловили на этапе с **mitmproxy**
 - Установить нужные флаги в профиле и зайти в админку под своей учетной записью
 
-### Insomnia
+### [Insomnia](https://github.com/Kong/insomnia)
 
 Скачать можно [отсюда](https://insomnia.rest/download/core/?). На мак ставится так:
 ```bash
