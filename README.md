@@ -74,7 +74,7 @@ $ adb backup -f backup.ab -noapk com.redmadrobot.vulnerableapp
 $ dd if=backup.ab ibs=24 skip=1 | openssl zlib -d > backup.tar
 #alternative
 $ dd if=backup.ab bs=24 skip=1 | python -c "import zlib,sys;sys.stdout.buffer.write(zlib.decompress(sys.stdin.buffer.read()))" > backup.tar
-$ tar xzvf backup.tar
+$ tar xvf backup.tar
 ```
 Дальше рассматриваем то, что забэкапилось. По OWASP это **M1: Improper Platform Usage**. Смотрим, что там набэкапилось и видим частично открытые Shared Preferences. Это уже M2: Insecure Data Storage. С зашифрованным паролем разберемся чуть позже.
 Теперь можно запустить MainActivity и обойти проверку pin-кода. Это соответствует **M1: Improper Platform Usage** и **M6: Insecure Authorization**.
