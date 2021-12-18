@@ -108,7 +108,6 @@ public final class LoginFragment extends Hilt_LoginFragment {
     ...
 }
 ```
-Исследуем экран авторизации. Видим, что есть кнопка, которая явно скрывается перед установкой обработчика нажатия.
 
 ### [apktool](https://github.com/iBotPeaches/Apktool)
 Если вы на маке, то установить можно через Homebrew
